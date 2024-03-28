@@ -134,4 +134,4 @@ const requestListener = (request, response) => {
 // 2. 使用 createServer
 const server = http.createServer(requestListener);
 // 4. 監聽 3005
-server.listen(3005);
+server.listen(process.env.PORT || 3005);
